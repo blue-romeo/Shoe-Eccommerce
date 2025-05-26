@@ -1,10 +1,10 @@
 import React from 'react'
-import './Category.css'
+import './Colors.css'
 
 const Colors = () => {
   return (
     <div>
-      
+      Colors
     </div>
   )
 }

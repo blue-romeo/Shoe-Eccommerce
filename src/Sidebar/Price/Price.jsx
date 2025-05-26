@@ -1,10 +1,10 @@
 import React from 'react'
-import './Category.css'
+import './Price.css'
 
 const Price = () => {
   return (
     <div>
-      
+      Price
     </div>
   )
 }

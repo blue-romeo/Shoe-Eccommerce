@@ -3,8 +3,8 @@ import './Recommended.css'
 
 const Recommended = () => {
   return <>
-  <div>
-    <h2>Recommended</h2>
+  <div className='recommended-title'>
+    <h2 className='recommended-flex'>Recommended</h2>
     <button className='btn'>All Products</button>
     <button className='btn'>Nike</button>
     <button className='btn'>Adidas</button>
