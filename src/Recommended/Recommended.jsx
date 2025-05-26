@@ -2,12 +2,17 @@ import React from 'react'
 import './Recommended.css'
 
 const Recommended = () => {
-  return (
-    <div>
-      Recommended
-    
-    </div>
-  )
+  return <>
+  <div>
+    <h2>Recommended</h2>
+    <button className='btn'>All Products</button>
+    <button className='btn'>Nike</button>
+    <button className='btn'>Adidas</button>
+    <button className='btn'>Puma</button>
+    <button className='btn'>Reebok</button>
+  </div>
+
+  </>
 }
 
 export default Recommended

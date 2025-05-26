@@ -5,9 +5,9 @@ import Product from './Product/Product'
 
 const App = () => {
   return (
-    <div>
-       <Recommended />
+    <div>       
       <Navigation />
+      <Recommended />
       <Product />
     </div>
   )
