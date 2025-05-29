@@ -5,7 +5,7 @@ import Price from './Price/Price'
 import Category from './Category/Category'
 import { CiShoppingCart } from "react-icons/ci";
 
-const Sidebar = () => {
+const Sidebar = ({handleChange}) => {
   return <>
     <section className="sidebar">
         <div className="logo-container">
@@ -13,9 +13,9 @@ const Sidebar = () => {
                 <CiShoppingCart />
             </h1>
         </div>
-        <Category />
-        <Colors />
-        <Price />
+        <Category handleChange={handleChange} />
+        <Colors handleChange={handleChange} />
+        <Price handleChange={handleChange} />
     </section>
   </>
 }
