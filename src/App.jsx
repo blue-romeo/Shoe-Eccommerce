@@ -20,10 +20,7 @@ const App = () => {
   const handleSubmit = (e) => {
     setSelectedCategory(e.target.value)
   }
-  //-------------Radio Filter----------------
-  const handleRadioChange = (e) => {
-    setSelectedCategory(e.target.value)
-  }
+  
 
   const filteredItems = products.filter(
     (product) => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1
@@ -61,13 +58,14 @@ const App = () => {
       )
     );
   }
+  const result = filteredData(selectedCategory, query, products);
 
   return (
     <div>
-      <Sidebar />       
-      <Navigation />
-      <Recommended />
-      <Product />
+      <Sidebar handleChange={handleChange} />       
+      <Navigation query={query} handleChange={handleChange} />
+      <Recommended handleSubmit={handleSubmit} />
+      <Product result={result} />
     </div>
   )
 }

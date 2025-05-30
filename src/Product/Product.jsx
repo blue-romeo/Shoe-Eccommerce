@@ -2,16 +2,17 @@ import React from 'react'
 import './Product.css'
 import { AiFillStar } from "react-icons/ai";
 import { BsFillBagFill } from "react-icons/bs";
-import Card from '../Components/Card';
 
-const Product = () => {
-  return <>
+
+const Product = ({result}) => {
+  return (
+  <>
   <section className="card-container">
-    <Card />
-    <Card /> 
+    {result}
   </section>
 
   </>
+  )
 }
 
 export default Product
